@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#410007", "surface-bright": "#fcf9f8", "on-surface-variant": "#5a403f", "tertiary-container": "#949393", "on-primary-container": "#61000e", "on-secondary": "#ffffff", "on-background": "#1b1c1c", "on-primary-fixed-variant": "#92001b", "primary-container": "#ff5a5f", "primary-fixed": "#ffdad8", "outline-variant": "#e2bebc", "on-tertiary-fixed": "#1b1c1c", "surface": "#fcf9f8", "inverse-surface": "#303030", "secondary-fixed": "#a3f69c", "on-secondary-fixed": "#002204", "surface-dim": "#dcd9d9", "on-error": "#ffffff", "surface-container-highest": "#e5e2e1", "surface-container-low": "#f6f3f2", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#464747", "on-primary": "#ffffff", "on-error-container": "#93000a", "tertiary-fixed-dim": "#c7c6c6", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#005312", "background": "#fcf9f8", "secondary-fixed-dim": "#88d982", "primary-fixed-dim": "#ffb3b0", "surface-container-high": "#eae7e7", "tertiary": "#5e5e5e", "secondary": "#1b6d24", "secondary-container": "#a0f399", "inverse-on-surface": "#f3f0ef", "on-tertiary-container": "#2b2c2c", "on-surface": "#1b1c1c", "primary": "#b52330", "surface-variant": "#e5e2e1", "surface-container-lowest": "#ffffff", "outline": "#8e706f", "inverse-primary": "#ffb3b0", "on-secondary-container": "#217128", "on-tertiary": "#ffffff", "tertiary-fixed": "#e3e2e2", "surface-tint": "#b52330", "surface-container": "#f0eded" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "2rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem" }, fontFamily: { "label-md": ["Inter"], "headline-xl-mobile": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Inter"], "display-hero-mobile": ["Inter"], "body-sm": ["Inter"], "title-md": ["Inter"], "display-hero": ["Inter"], "metric-numeral": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "metric-numeral": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="StayWise AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WPKCpqNiTlhCixO63MmeLEiV0DA0ZjaKXcloMOgI_KA_ZRKawkDhLsoNi25ok4xCp1BTYCOIqSEwSo7k6Sj1LhY0I9YwPcR69g8Bn5cXU5Q61rQh_9l7Mexx9FuCY1kYfkWFeAsOeC0S6ZRs0KCOR8Q4m-m3xGBbvIs8UYucQp-NxeWWI5_4EW9Euo48O0cvGwkZrRjlj0VL03LhLlM1LQGXQ_IB3JDaQRCcenwzqdKYLn58Pn975Wu2az"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-tight">StayWise AI</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Results</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button class="w-11 h-11 flex items-center justify-center rounded-full" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACsHdsbeRWuaCwwn3ZwrCd_txQVzPFGBvfvtZxo_8DJ40CYvOEvipgRYZ3k6PIJBhQK_fJeuDuusg8vpwy4h_LSejbPVPJdVvpXBXZRD8j-5cl-R3L_HrR2VTcAuhZ3rUPkrz2lRnPLsu-CYTnlh-nUPy-f9yw3cBeKn_URbeZUyB1nemk7qd5ZEVVs8NFZnG9bTTzQKJYUmfZsc87Jynnmxkop7AxaVQY7WVhVRzkMP3PxcjzWKZWPw"/></button></div></div></header><main class="flex-1 flex flex-col w-full bg-surface pt-16 pb-24 px-gutter-mobile"><div class="flex flex-col w-full pb-8 space-y-5">
+<!-- Top Property Context & Predicted Summary Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p- space-lg shadow-sm">
+<div class="flex items-center gap-space-sm mb-4">
+<img alt="Listing thumbnail" class="w-14 h-14 rounded-xl object-cover shadow-sm flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMl_en31mUkLj5zEF7Of7CptIwpVx_5U-T6SFG01BHrT5AGeoyHa3IOJ-uhgXWS1pG6-eyjJSykqvsBXv4DzNPCsYZPVruxZ-SPiTggXKyULhnN8sUyR3zul1t1bkVWe3g6QrvDIo7mW31uBvFKVl4LQ9_hMvb062xuFAOK2O_uWIasCVSUnWHKRGxbK_04_JAykKRsg9-d_xSZ_BR8-IxJ9yp7Yumj1M3EWNHEjvlcvz62Na6hvBkWg"/>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide uppercase">AI Model v4.2 Synchronized</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface truncate">Luxury 2BHK Apartment</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Bandra West, Mumbai
+        </p>
+</div>
+</div>
+<div class="pt-2 border-t border-surface-container-highest">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Estimated nightly rental price</span>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-metric-numeral text-metric-numeral text-on-surface tracking-tight">₹4,500</span>
+<span class="font-title-md text-title-md text-on-surface-variant font-normal">/ night</span>
+</div>
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm mb-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>₹3,800 – ₹5,200 (±8% confidence interval)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+<span>Estimations based on 1,420 similar verified listings in Bandra West</span>
+</p>
+</div>
+</div>
+<!-- Price Strategy Comparison Section -->
+<div class="space-y-3">
+<div class="flex items-center justify-between px-1">
+<h3 class="font-headline-md text-headline-md text-on-surface">Strategy Options</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">Select to apply</span>
+</div>
+<!-- Strategy Option 1: Budget -->
+<div class="cursor-pointer transition-all duration-200 rounded-xl p-4 bg-surface-container-lowest shadow-sm hover:shadow-md flex items-center justify-between" id="strat-budget" onclick="selectStrategy('budget', 3900, 92)">
+<div class="space-y-1 pr-3">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Budget Flow</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">High Volume</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fast occupancy (92%), maximizes guest volume</p>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-title-md text-title-md text-on-surface block">₹3,900</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ night</span>
+</div>
+</div>
+<!-- Strategy Option 2: AI Recommended (Default Active) -->
+<div class="cursor-pointer transition-all duration-200 rounded-xl p-4 bg-primary-fixed/20 shadow-md flex items-center justify-between relative overflow-hidden" id="strat-rec" onclick="selectStrategy('rec', 4500, 78)">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-container/10 pointer-events-none"></div>
+<div class="space-y-1 pr-3">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-bold">Recommended (AI Optimal)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm">Best Match</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Balanced revenue & 78% occupancy sweet spot</p>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-headline-lg text-headline-lg text-on-surface block font-bold">₹4,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ night</span>
+</div>
+</div>
+<!-- Strategy Option 3: Premium -->
+<div class="cursor-pointer transition-all duration-200 rounded-xl p-4 bg-surface-container-lowest shadow-sm hover:shadow-md flex items-center justify-between" id="strat-prem" onclick="selectStrategy('prem', 5400, 58)">
+<div class="space-y-1 pr-3">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Premium Prestige</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">High Margin</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High margin, targeting weekend luxury travelers</p>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-title-md text-title-md text-on-surface block">₹5,400</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ night</span>
+</div>
+</div>
+</div>
+<!-- Interactive Price Trend Chart -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">12-Month Projected Rates</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dynamic seasonal cycle</span>
+</div>
+<!-- Segmented Time Tabs -->
+<div class="flex bg-surface-container-high p-0.5 rounded-lg text-label-sm font-label-sm">
+<button class="px-2.5 py-1 rounded text-on-surface-variant transition-colors" id="tab-3m" onclick="setChartRange(3)" type="button">3M</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant transition-colors" id="tab-6m" onclick="setChartRange(6)" type="button">6M</button>
+<button class="px-2.5 py-1 rounded bg-surface text-on-surface shadow-sm font-semibold" id="tab-12m" onclick="setChartRange(12)" type="button">12M</button>
+</div>
+</div>
+<!-- Tooltip Banner -->
+<div class="flex items-center justify-between px-3 py-2 rounded-lg bg-surface-container text-on-surface text-body-sm font-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">trending_up</span>
+<span id="chart-tooltip-text">November: ₹4,850/night (+15% holiday surge)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Peak Season</span>
+</div>
+<!-- SVG Line Chart with Gradient Curve -->
+<div class="relative w-full h-44 pt-2">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 320 130">
+<defs>
+<lineargradient id="curveGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ff5a5f" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#ff5a5f" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Shaded Confidence Band -->
+<path d="M 0,65 Q 40,68 80,78 T 160,95 T 240,45 T 320,15 L 320,130 L 0,130 Z" fill="url(#curveGradient)"></path>
+<!-- Gridlines -->
+<line stroke="#f0eded" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="320" y1="30" y2="30"></line>
+<line stroke="#f0eded" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="320" y1="65" y2="65"></line>
+<line stroke="#f0eded" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="320" y1="100" y2="100"></line>
+<!-- AI Predicted Rate Curve -->
+<path d="M 0,65 Q 40,68 80,78 T 160,95 T 240,45 T 320,15" fill="none" stroke="#ff5a5f" stroke-linecap="round" stroke-width="3"></path>
+<!-- Market Baseline Curve -->
+<path d="M 0,80 Q 40,82 80,88 T 160,105 T 240,60 T 320,35" fill="none" stroke="#949393" stroke-dasharray="4 3" stroke-width="1.5"></path>
+<!-- Data Points & Highlights -->
+<!-- Monsoon Dip (July ~160px) -->
+<circle cx="160" cy="95" fill="#fcf9f8" r="4.5" stroke="#ff5a5f" stroke-width="2.5"></circle>
+<!-- November Point (260px) -->
+<circle cx="266" cy="38" fill="#ff5a5f" r="5"></circle>
+<circle cx="266" cy="38" fill="#ff5a5f" fill-opacity="0.25" r="8"></circle>
+<!-- December Peak (320px) -->
+<circle cx="316" cy="16" fill="#fcf9f8" r="4.5" stroke="#ff5a5f" stroke-width="2.5"></circle>
+</svg>
+<!-- Timeline X Labels -->
+<div class="flex justify-between text-body-sm font-body-sm text-tertiary pt-2">
+<span>Jan</span>
+<span>Mar</span>
+<span>May</span>
+<span>Jul (₹3.6k)</span>
+<span>Sep</span>
+<span>Nov</span>
+<span>Dec (₹6.8k)</span>
+</div>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-on-surface">
+<span class="w-3 h-1 rounded bg-primary-container"></span> AI Optimal
+      </div>
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-tertiary">
+<span class="w-3 h-0.5 rounded bg-tertiary-container"></span> Comp Baseline
+      </div>
+</div>
+</div>
+<!-- Market Comparison Breakdown -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface">Market Benchmark</h3>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">north_east</span> +8.4% above avg
+      </span>
+</div>
+<!-- Comparative Gauge Bar -->
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Suburban Min: ₹3,200</span>
+<span class="font-semibold text-on-surface">Bandra Avg: ₹4,150</span>
+<span>Top Tier: ₹6,500</span>
+</div>
+<div class="relative w-full h-3 rounded-full bg-surface-container-highest overflow-visible">
+<!-- Range highlight -->
+<div class="absolute left-[15%] right-[20%] top-0 bottom-0 bg-surface-container-high rounded-full"></div>
+<!-- Target Marker Pin -->
+<div class="absolute left-[45%] -top-1 bottom-0 flex flex-col items-center">
+<div class="w-5 h-5 rounded-full bg-primary border-2 border-surface shadow flex items-center justify-center text-on-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-1">
+<span class="font-body-sm text-body-sm text-primary font-medium">Your Listing: ₹4,500</span>
+</div>
+</div>
+<!-- Tier & Positioning Grid -->
+<div class="grid grid-cols-2 gap-space-sm pt-2">
+<div class="p-3 rounded-xl bg-surface-container-low space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Market Demand Tier</span>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-secondary font-bold">Top 15%</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+</div>
+<!-- Sage Progress Bar -->
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full mt-1 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Positioning Category</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold block truncate">Modern Luxury</span>
+<span class="font-body-sm text-body-sm text-tertiary block truncate">High Amenities Index</span>
+</div>
+</div>
+</div>
+<!-- Potential Revenue Calculator -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Potential Revenue Calculator</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Adjust occupancy to test dynamic scenarios</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">calculate</span>
+</div>
+<!-- Occupancy Slider -->
+<div class="space-y-2 pt-1">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Projected Occupancy</span>
+<span class="font-title-md text-title-md text-primary font-semibold" id="slider-occupancy-label">75% (23 nights/mo)</span>
+</div>
+<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary-container" id="occupancy-range" max="100" min="30" oninput="updateCalculator(this.value)" step="1" type="range" value="75"/>
+<div class="flex justify-between text-body-sm font-body-sm text-tertiary">
+<span>Low (30%)</span>
+<span>Average (65%)</span>
+<span>High (85%+)</span>
+</div>
+</div>
+<!-- Calculated Output Banner -->
+<div class="grid grid-cols-2 gap-space-sm p-4 rounded-xl bg-surface-container-low">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Monthly Gross</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight" id="calc-monthly">₹1,03,500</span>
+<span class="font-body-sm text-body-sm text-tertiary">/ mo</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Annual Gross Run-rate</span>
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight" id="calc-annual">₹12,42,000</span>
+<span class="font-body-sm text-body-sm text-tertiary">/ yr</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary italic">
+      * Gross revenue estimate before platform fees & operating expenses. Calculated using active selected nightly rate.
+    </p>
+</div>
+<!-- AI Pricing Insights Panel (4 Diagnostic Cards) -->
+<div class="space-y-3">
+<div class="flex items-center gap-2 px-1">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">AI Revenue Insights</h3>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Diagnostic 1: Location -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">apartment</span>
+</div>
+<div class="space-y-0.5 min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Location Impact</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Prime Bandra location drives a <strong class="text-on-surface font-semibold">+22% premium</strong> over suburban benchmarks.
+          </p>
+</div>
+</div>
+<!-- Diagnostic 2: Capacity -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">group</span>
+</div>
+<div class="space-y-0.5 min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Capacity Boost</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Accommodating 4 guests increases booking velocity by <strong class="text-on-surface font-semibold">18%</strong> over standard 2-person units.
+          </p>
+</div>
+</div>
+<!-- Diagnostic 3: Amenity Value -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">wifi_tethering</span>
+</div>
+<div class="space-y-0.5 min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Amenity Value</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Adding dedicated Workspace & High-speed Wi-Fi unlocks <strong class="text-on-surface font-semibold">₹450/night more</strong> from remote executives.
+          </p>
+</div>
+</div>
+<!-- Diagnostic 4: Seasonal Surge -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-primary-fixed-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+<div class="space-y-0.5 min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Seasonal Opportunity</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Demand surges <strong class="text-on-surface font-semibold">+35% in November–January</strong>; recommend enabling dynamic holiday pricing.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Interactive Action CTAs -->
+<div class="pt-2 flex flex-col gap-3">
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md shadow-md hover:bg-primary transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+<span>Save & Export PDF Report</span>
+</button>
+<button class="w-full py-3.5 px-4 rounded-xl bg-surface-container text-on-surface font-title-md text-title-md hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span>Adjust Property Specs</span>
+</button>
+</div>
+</div>
+<script>
+  let currentNightlyRate = 4500;
+
+  function selectStrategy(type, rate, defaultOcc) {
+    currentNightlyRate = rate;
+
+    // Reset Strategy card styles
+    const budgetEl = document.getElementById('strat-budget');
+    const recEl = document.getElementById('strat-rec');
+    const premEl = document.getElementById('strat-prem');
+
+    budgetEl.className = 'cursor-pointer transition-all duration-200 rounded-xl p-4 bg-surface-container-lowest shadow-sm hover:shadow-md flex items-center justify-between';
+    recEl.className = 'cursor-pointer transition-all duration-200 rounded-xl p-4 bg-surface-container-lowest shadow-sm hover:shadow-md flex items-center justify-between';
+    premEl.className = 'cursor-pointer transition-all duration-200 rounded-xl p-4 bg-surface-container-lowest shadow-sm hover:shadow-md flex items-center justify-between';
+
+    if (type === 'budget') {
+      budgetEl.className = 'cursor-pointer transition-all duration-200 rounded-xl p-4 bg-surface-container-lowest shadow-md flex items-center justify-between ring-2 ring-primary-container';
+    } else if (type === 'rec') {
+      recEl.className = 'cursor-pointer transition-all duration-200 rounded-xl p-4 bg-primary-fixed/20 shadow-md flex items-center justify-between ring-2 ring-primary-container relative overflow-hidden';
+    } else if (type === 'prem') {
+      premEl.className = 'cursor-pointer transition-all duration-200 rounded-xl p-4 bg-surface-container-lowest shadow-md flex items-center justify-between ring-2 ring-primary-container';
+    }
+
+    const slider = document.getElementById('occupancy-range');
+    slider.value = defaultOcc;
+    updateCalculator(defaultOcc);
+  }
+
+  function updateCalculator(occPercent) {
+    const nights = Math.round(30 * (occPercent / 100));
+    document.getElementById('slider-occupancy-label').innerText = occPercent + '% (' + nights + ' nights/mo)';
+
+    const monthlyRev = Math.round(currentNightlyRate * nights);
+    const annualRev = monthlyRev * 12;
+
+    document.getElementById('calc-monthly').innerText = '₹' + monthlyRev.toLocaleString('en-IN');
+    document.getElementById('calc-annual').innerText = '₹' + annualRev.toLocaleString('en-IN');
+  }
+
+  function setChartRange(months) {
+    const tabs = ['3m', '6m', '12m'];
+    tabs.forEach(t => {
+      const el = document.getElementById('tab-' + t);
+      if (t === months + 'm') {
+        el.className = 'px-2.5 py-1 rounded bg-surface text-on-surface shadow-sm font-semibold';
+      } else {
+        el.className = 'px-2.5 py-1 rounded text-on-surface-variant transition-colors';
+      }
+    });
+
+    const tooltip = document.getElementById('chart-tooltip-text');
+    if (months === 3) {
+      tooltip.innerText = 'Next 90 Days: Averaging ₹4,620/night (+9% steady demand)';
+    } else if (months === 6) {
+      tooltip.innerText = 'Monsoon Season (Jul): ₹3,600/night dip anticipated';
+    } else {
+      tooltip.innerText = 'November: ₹4,850/night (+15% holiday surge)';
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-gutter-mobile flex items-center justify-around"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] text-on-surface-variant transition-colors" data-path="predictor" href="#"><span class="material-symbols-outlined text-[24px]">tune</span><span class="font-label-sm text-label-sm">Predictor</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] transition-colors text-primary-container font-semibold" data-path="results" href="#"><span class="material-symbols-outlined text-[24px]">query_stats</span><span class="font-label-sm text-label-sm">Results</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] text-on-surface-variant transition-colors" data-path="insights" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm">Insights</span></a></div></nav></body></html>
