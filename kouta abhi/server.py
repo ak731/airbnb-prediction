@@ -7,18 +7,20 @@ import pandas as pd
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 
-# Windows Application Control / WDAC DLL block bypass for scipy and sklearn
-if 'scipy.stats._levy_stable.levyst' not in sys.modules:
-    _m = types.ModuleType('scipy.stats._levy_stable.levyst')
-    _m.Nolan = type('Nolan', (), {})
-    sys.modules['scipy.stats._levy_stable.levyst'] = _m
+# Windows Application Control / WDAC DLL block bypass for scipy and sklearn (Windows only)
+if sys.platform == 'win32':
+    if 'scipy.stats._levy_stable.levyst' not in sys.modules:
+        _m = types.ModuleType('scipy.stats._levy_stable.levyst')
+        _m.Nolan = type('Nolan', (), {})
+        sys.modules['scipy.stats._levy_stable.levyst'] = _m
 
-for _mod_name, _cls_name in [('sklearn.neighbors._kd_tree', 'KDTree'), ('sklearn.neighbors._ball_tree', 'BallTree')]:
-    if _mod_name not in sys.modules:
-        _m = types.ModuleType(_mod_name)
-        _cls = type(_cls_name, (), {'valid_metrics': []})
-        setattr(_m, _cls_name, _cls)
-        sys.modules[_mod_name] = _m
+    for _mod_name, _cls_name in [('sklearn.neighbors._kd_tree', 'KDTree'), ('sklearn.neighbors._ball_tree', 'BallTree')]:
+        if _mod_name not in sys.modules:
+            _m = types.ModuleType(_mod_name)
+            _cls = type(_cls_name, (), {'valid_metrics': []})
+            setattr(_m, _cls_name, _cls)
+            sys.modules[_mod_name] = _m
+
 
 
 from sklearn.tree import DecisionTreeRegressor
@@ -73,11 +75,16 @@ if DATA_PATH.endswith('.csv'):
 elif DATA_PATH.endswith('.parquet'):
     try:
         df_raw = pd.read_parquet(DATA_PATH)
-    except Exception:
+    except Exception as e:
+        print(f"Parquet loading encountered error: {e}. Attempting fallback...")
         if os.path.exists(CSV_DATA_PATH):
             df_raw = pd.read_csv(CSV_DATA_PATH, low_memory=False)
+        elif os.path.exists(XLSX_DATA_PATH):
+            print(f"Loading from Excel: {XLSX_DATA_PATH}")
+            df_raw = pd.read_excel(XLSX_DATA_PATH)
         else:
             raise
+
 elif DATA_PATH.endswith('.xlsx'):
     df_raw = pd.read_excel(DATA_PATH)
 else:
